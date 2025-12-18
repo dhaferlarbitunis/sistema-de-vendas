@@ -2,7 +2,7 @@ from flask import Flask,Blueprint, jsonify, request
 from ProdutoRepository import ProdutoRepository
 from produto import Produto
 
-produto_bp = Blueprint("produto". __name__)
+produto_bp = Blueprint("produto", __name__)
 
 @produto_bp.route("/produtos", methods=['GET'])
 def listar_produtos():
